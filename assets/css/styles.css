@@ -76,3 +76,46 @@ body {
   font-weight: 500;
   color: var(--gray);
 }
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 0 0 20px;
+}
+
+.name {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: var(--primary-color-default);
+}
+
+.data {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--primary-color-default);
+  margin: 0 0 55px 0;
+}
+
+.data-on {
+  font-size: 20px;
+}
+
+.links {
+  margin: 60px 0 0 0;
+}
+
+.links a {
+  margin: 0 28px 0 0;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 12px;
+  color: rgb(233, 233, 233);
+  background: linear-gradient(var(--primary-color));
+}
+
+.links a:hover {
+  transition: 0.3s;
+  background: linear-gradient(var(--primary-color-dark));
+}
