@@ -130,3 +130,7 @@ body {
   color: var(--primary-color-default);
   font-weight: 500;
 }
+
+.list li a {
+  text-decoration: none;
+}
