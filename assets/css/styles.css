@@ -119,3 +119,14 @@ body {
   transition: 0.3s;
   background: linear-gradient(var(--primary-color-dark));
 }
+
+.list {
+  margin: 0 0 0 30px;
+}
+
+.list li {
+  font-size: 24px;
+  margin: 20px;
+  color: var(--primary-color-default);
+  font-weight: 500;
+}
