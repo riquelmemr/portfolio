@@ -21,22 +21,29 @@ body {
 }
 
 .main {
-  position: relative;
   min-height: 100vh;
   width: 100vw;
 }
 
 .header {
-  position: absolute;
+  position: relative;
   height: 100vh;
-  width: 28%;
+  width: 25%;
 
   background: linear-gradient(var(--primary-color));
 }
 
+.right-container {
+  position: absolute;
+  left: 25%;
+  top: calc(50% - 190px);
+
+  margin: 0 0 0 20px;
+}
+
 .container-img {
   position: absolute;
-  left: calc(50% - 100px);
+  left: calc(50% - 115px);
   top: calc(40% - 140px);
   width: 100%;
 
@@ -44,7 +51,7 @@ body {
 }
 
 .my-image {
-  width: 200px;
+  width: 225px;
   height: auto;
 
   border: 2px solid black;
@@ -53,7 +60,7 @@ body {
 
 .navigation {
   position: absolute;
-  top: calc(55% - 50px);
+  top: calc(55% - 20px);
   left: calc(50% - 110px);
 }
 
@@ -81,14 +88,6 @@ body {
 .selected {
   font-weight: 500;
   color: var(--gray);
-}
-
-.right-container {
-  position: absolute;
-  left: 28%;
-  top: calc(50% - 234px);
-
-  margin: 0 0 0 20px;
 }
 
 .name {
@@ -139,4 +138,21 @@ body {
 
 .list li a {
   text-decoration: none;
+}
+
+.loading {
+  width: 0%;
+  height: 10px;
+
+  background: linear-gradient(var(--primary-color));
+  border-radius: 2px;
+  margin: 0 0 20px;
+
+  transition: width 1s;
+  animation: toFill 4s linear infinite;
+}
+
+@keyframes toFill {
+  from {width: 0%;}
+  to {width: 65%;}
 }
