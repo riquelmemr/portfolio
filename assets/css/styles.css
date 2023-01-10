@@ -21,36 +21,40 @@ body {
 }
 
 .main {
-  display: flex;
   position: relative;
   min-height: 100vh;
   width: 100vw;
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 33.3%;
+  position: absolute;
+  height: 100vh;
+  width: 28%;
 
   background: linear-gradient(var(--primary-color));
 }
 
 .container-img {
+  position: absolute;
+  left: calc(50% - 100px);
+  top: calc(40% - 140px);
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   margin: 0 0 20px 0;
 }
 
 .my-image {
-  width: 60%;
+  width: 200px;
   height: auto;
 
   border: 2px solid black;
   border-radius: 50%;
+}
+
+.navigation {
+  position: absolute;
+  top: calc(55% - 50px);
+  left: calc(50% - 110px);
 }
 
 .nav-list {
@@ -59,7 +63,7 @@ body {
 }
 
 .nav-item {
-  font-size: 18px;
+  font-size: 22px;
   margin: 16px;
 }
 
@@ -80,9 +84,9 @@ body {
 }
 
 .right-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: absolute;
+  left: 28%;
+  top: calc(50% - 234px);
 
   margin: 0 0 0 20px;
 }
