@@ -25,29 +25,8 @@ body {
   width: 100vw;
 }
 
-.header {
-  position: relative;
-  height: 100vh;
-  width: 25%;
-
+.bg-default {
   background: linear-gradient(var(--primary-color));
-}
-
-.right-container {
-  position: absolute;
-  left: 25%;
-  top: calc(50% - 190px);
-
-  margin: 0 0 0 20px;
-}
-
-.container-img {
-  position: absolute;
-  left: calc(50% - 115px);
-  top: calc(40% - 140px);
-  width: 100%;
-
-  margin: 0 0 20px 0;
 }
 
 .my-image {
@@ -85,11 +64,6 @@ body {
   transition: 0.3s;
 }
 
-.selected {
-  font-weight: 500;
-  color: var(--gray);
-}
-
 .name {
   font-size: 50px;
   text-transform: uppercase;
@@ -125,21 +99,6 @@ body {
   background: linear-gradient(var(--primary-color-dark));
 }
 
-.list {
-  margin: 0 0 0 30px;
-}
-
-.list li {
-  font-size: 24px;
-  margin: 20px;
-  color: var(--primary-color-default);
-  font-weight: 500;
-}
-
-.list li a {
-  text-decoration: none;
-}
-
 .loading {
   width: 0%;
   height: 10px;
@@ -150,6 +109,14 @@ body {
 
   transition: width 1s;
   animation: toFill 4s linear infinite;
+}
+
+.list-title {
+  font-size: 36px;
+}
+
+.list-item {
+  font-size: 22px;
 }
 
 @keyframes toFill {
